@@ -29,7 +29,7 @@ LOG_MAE = 0.1
 # Streamlit UI
 st.markdown("<h1 style='text-align: center;'>Belgian Immo Price Predictor</h1>", unsafe_allow_html=True)
 st.sidebar.header("Insert your features:")
-image = Image.open("ImmoElizaDeploy.png")
+image = Image.open("Immo_Eliza_Predictor.png")
 st.image(image, caption="Immo Eliza Price Predictor")
 
 # Load the data for the selectbox options
@@ -57,7 +57,7 @@ def user_report():
     terrace_area_m2 = st.sidebar.slider("Terrace Area (m²)", 0, 499, 1)
 
     # Binary Inputs (Checkboxes) 
-    st.sidebar.text("\n --- Amenities (Yes/No) --- \n")
+    st.sidebar.text("\n --- Amenities --- \n")
     swimming_pool = 1 if st.sidebar.checkbox("Has Swimming Pool") else 0
     open_fire = 1 if st.sidebar.checkbox("Has Open Fireplace") else 0
     terrace = 1 if st.sidebar.checkbox("Has Terrace (Yes/No)") else 0
