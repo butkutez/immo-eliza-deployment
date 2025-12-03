@@ -78,5 +78,6 @@ This project was completed as part of the Model Deployment module during the AI 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/zivile-butkute/).
 
 
-[![Property](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnMyZ3lrb2NzeWtpNXlxczZpMnFlbGFzY2FuMWZpYzlodGk2ZTRleiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUPGGuzpmG3jfeYWIg/giphy.gif](https://giphy.com/gifs/house-home-moving-xUPGGuzpmG3jfeYWIg)
-*Image source: [Medium](https://giphy.com/gifs/house-home-moving-xUPGGuzpmG3jfeYWIg)*
+
+[![Property Moving GIF](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnMyZ3lrb2NzeWtpNXlxczZpMnFlbGFzY2FuMWZpYzlodGk2ZTRleiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUPGGuzpmG3jfeYWIg/giphy.gif)](https://giphy.com/gifs/house-home-moving-xUPGGuzpmG3jfeYWIg)
+*Image source: [GIPHY](https://giphy.com/gifs/house-home-moving-xUPGGuzpmG3jfeYWIg)*
