@@ -50,15 +50,15 @@ def user_report():
     state_of_building = st.sidebar.selectbox("Select the building status", sorted(building_status_opts))
 
     # Numerical Inputs for Slider bar
-    number_of_bedrooms = st.sidebar.slider("Number of Bedrooms", 0, 20, 1)
+    number_of_bedrooms = st.sidebar.slider("Number of Bedrooms", 1, 20, 1)
     number_facades = st.sidebar.slider("Number of Facades", 1, 4, 1)
-    living_area_m2 = st.sidebar.slider("Living Area (m²)", 10, 499, 10)
-    terrace_area_m2 = st.sidebar.slider("Terrace Area (m²)", 0, 499, 1)
+    living_area_m2 = st.sidebar.slider("Living Area (m²)", 10, 500, 10)
+    terrace_area_m2 = st.sidebar.slider("Terrace Area (m²)", 0, 500, 1)
 
     # Binary Inputs (Checkboxes) 
     swimming_pool = 1 if st.sidebar.checkbox("Has Swimming Pool") else 0
     open_fire = 1 if st.sidebar.checkbox("Has Open Fireplace") else 0
-    terrace = 1 if st.sidebar.checkbox("Has Terrace (Yes/No)") else 0
+    terrace = 1 if st.sidebar.checkbox("Has Terrace") else 0
     equiped_kitchen = 1 if st.sidebar.checkbox("Has Equiped Kitchen", value=True) else 0
     furnished = 1 if st.sidebar.checkbox("Is Furnished") else 0
     garden = 1 if st.sidebar.checkbox("Has Garden") else 0
@@ -90,7 +90,7 @@ def user_report():
 # Collect user data
 user_data = user_report()
 
-# The model predicts the logarithm of the price to stabilize the distribution. The Log MAE (0.1) 
+# The model predicts the logarithm of the price to stabilize the distribution. The Log MAE (Mean Absolute Error: 0.1) 
 # is used to calculate the confidence interval in log-space. All three values (prediction and bounds) 
 # are then converted back to Euros using the inverse function (np.expm1) and formatted for display.
 try:
