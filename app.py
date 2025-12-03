@@ -15,7 +15,6 @@ from PIL import Image
 data_frame = pd.read_csv("final_cleaned_data.csv")
 model = joblib.load("model.pkl")
 
-
 # Applies the inverse of the log(1+x) transformation (np.expm1) to convert 
 # a prediction from log-space back into the real currency scale (Euros).
 
@@ -36,7 +35,11 @@ st.image(image, caption="Immo Eliza Price Predictor")
 province_opts = data_frame["province"].astype(str).unique()
 type_opts = data_frame["type"].astype(str).unique()
 subtype_opts = data_frame["subtype"].astype(str).unique()
-building_status_opts = data_frame["state_of_building"].astype(str).unique()
+
+# Making sure that missing values are assigned to 'Unknown' category in the drop down list.
+building_status_processed = data_frame["state_of_building"].copy()
+building_status_processed.fillna('Unknown', inplace=True)
+building_status_opts = building_status_processed.astype(str).unique()
 
 # Collects user-selected property features from the Streamlit sidebar widgets (selectboxes, sliders, and checkboxes). 
 # The inputs are compiled into a single-row pandas DataFrame structured precisely to serve as input for the trained 
