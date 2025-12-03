@@ -50,14 +50,12 @@ def user_report():
     state_of_building = st.sidebar.selectbox("Select the building status", sorted(building_status_opts))
 
     # Numerical Inputs for Slider bar
-    st.sidebar.text("\n More features \n")
     number_of_bedrooms = st.sidebar.slider("Number of Bedrooms", 0, 20, 1)
     number_facades = st.sidebar.slider("Number of Facades", 1, 4, 1)
     living_area_m2 = st.sidebar.slider("Living Area (m²)", 10, 499, 10)
     terrace_area_m2 = st.sidebar.slider("Terrace Area (m²)", 0, 499, 1)
 
     # Binary Inputs (Checkboxes) 
-    st.sidebar.text("\n --- Amenities --- \n")
     swimming_pool = 1 if st.sidebar.checkbox("Has Swimming Pool") else 0
     open_fire = 1 if st.sidebar.checkbox("Has Open Fireplace") else 0
     terrace = 1 if st.sidebar.checkbox("Has Terrace (Yes/No)") else 0
