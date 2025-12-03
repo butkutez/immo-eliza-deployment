@@ -155,7 +155,7 @@ with col8:
 with col9:
     pass
 with col4:
-    prediction_button = st.button("Property Price Predictor")
+    prediction_button = st.button("Predict The Price")
 
 if prediction_button:
     # ... Your prediction and output logic ...
