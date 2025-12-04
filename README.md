@@ -69,8 +69,8 @@ The Streamlit application provides a simple, interactive user interface:
 
 - Applying the inverse log-transform (np.expm1) to convert the log-price prediction back to Euros for a meaningful result.
 
-## **Timeline**
-This project was completed over 3 days, fulfilling the main objective of deploying a machine learning model via a Streamlit web application.
+## **Result / Timeline**
+The final application can be viewed here: https://immo-eliza-deployment-elhbdqkkclc7tvn5zybt5a.streamlit.app/. This project was completed over 3 days, fulfilling the main objective of deploying a machine learning model via a Streamlit web application.
 
 ## **Personal Situation**
 This project was completed as part of the Model Deployment module during the AI & Data Science Bootcamp at BeCode.org.
