@@ -29,7 +29,7 @@ LOG_MAE = 0.1
 st.markdown("<h1 style='text-align: center;'>Belgian Immo Price Predictor</h1>", unsafe_allow_html=True)
 st.sidebar.header("Insert your features:")
 image = Image.open("Immo_Eliza_Predictor.png")
-st.image(image, caption="Immo Eliza Price Predictor")
+st.image(image)
 
 # Load the data for the selectbox options
 province_opts = data_frame["province"].astype(str).unique()
